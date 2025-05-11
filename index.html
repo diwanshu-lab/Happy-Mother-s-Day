@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+
+  <!-- Update title and description for a birthday theme -->
+  <title>Mother's Day🤱 | Diwanshu Yadav</title>
+  <link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico" />
+  <meta name="description" content="A special birthday greeting" />
+</head>
+
+<body style="background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(./r.jpg);
+    height: 100vh;">
+  <audio src="./y2mate (mp3cut.net).mp3" id="linkmp3" class="sembunyi"></audio>
+
+  <div id="bodyblur">
+    <!-- Wallpaper -->
+    <img src="" id="wallpaper" />
+  </div>
+
+  <div id="Content">
+    <div id="kadoIn">
+      <!-- Gift Button -->
+      <img src="./Valentine-Surprise.png" alt="Open Gift Button" />
+    </div>
+        <h1 style="color: rgb(0,0,0);">
+        To My First Favourite Woman - MAA 🥰 💗
+     </h1>
+    <p id="ket">
+      <span style="font-style: italic; color: rgb(0,0,0); margin-top: 3px !important; ">Open the gift, my pyaari maa😘</span>
+    </p>
+
+    <div class="kumpulanstiker" style="margin-top: 95px;">
+      <!-- Stickers for Content -->
+      <img src="https://media.tenor.com/g74ZY1LJobkAAAAi/baby-son.gif" id="fotostiker" />
+      <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker1" />
+      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker2" />
+      <img src="https://media.tenor.com/snFoLI-S9CQAAAAj/milk-and-mocha.gif" id="fotostiker3" />
+      <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker4" />
+      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker5" />
+    </div>
+
+    <p id="halo" class="halo"></p>
+
+<div>
+  <blockquote id="bq" data-text="🌸">
+    <!-- Mother's Day Messages -->
+    <p id="kalimat">
+      Happy Mother's Day to the most amazing woman in the world! 🌷
+    </p>
+
+    <!-- Message -->
+    <p id="pesan1">Tap here for a heartfelt surprise for Maa! 💝</p>
+    <div id="kolombaru">
+      <li id="lv1">💐</li>
+      <li id="lv2">👩‍👧</li>
+      <li id="lv3">💖</li>
+      <li id="lv4">🌟</li>
+    </div>
+
+    <p id="pesan2">Maa, your love is my strength forever. 💪</p>
+    <p id="pesan3">Do you know who makes every day special?</p>
+    <p id="pesan4" class="sty2">It’s YOU, Maa! 💗</p>
+    <p id="pesan5" class="sty2">
+      Today, I just want to say THANK YOU for every hug, every word, every prayer. 🫶
+    </p>
+    <p id="pesan6" class="sty2">
+      You are my forever hero, my first love, my everything. Happy Mother's Day! 💝
+    </p>
+
+    <!-- Next Button -->
+    <p id="opsL">Tap to send love to Maa! ❤️</p>
+  </blockquote>
+</div>
+
+
+    <!-- Send Message Button -->
+    <div id="Tombol"><a id="By">&#128140; Next</a></div>
+
+    <!-- Rejected Message (if needed) -->
+    <div id="pesanditolak">
+      <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif" />
+      <p id="kataditolak">
+        Oops! Maa ke liye itna pyaar kaise skip kar sakte ho? 💞
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Main script remains similar; further changes are made in a.js if needed.
+    const body = document.querySelector("body");
+    const swalst = Swal.mixin({
+      timer: 2300,
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      timerProgressBar: true,
+      imageHeight: 90,
+    });
+    audio = new Audio("" + linkmp3.src);
+    ftganti = 0;
+    fungsi = 0;
+    fungsiAwal = 0;
+    deffotostiker = fotostiker.src;
+    Content.style = "opacity:1;margin-top:16vh";
+    const swals = Swal.mixin({
+      allowOutsideClick: false,
+      cancelButtonColor: "#FF0040",
+      imageHeight: 80,
+    });
+
+    document.getElementById("kadoIn").onclick = function () {
+      if (fungsiAwal == 0) {
+        audio.play();
+        fungsiAwal = 1;
+        kadoIn.style =
+          "transition:all .8s ease;transform:scale(10);opacity:0";
+        wallpaper.style = "transform: scale(1.5);";
+        ket.style = "display:none";
+        setTimeout(initengahan, 300);
+        setTimeout(inipesan, 500);
+      }
+    };
+
+async function inipesan() {
+  var { value: nama } = await swals.fire({
+    title: "Maa ke liye ek pyara naam likhiye 💕",
+    input: "text",
+    inputPlaceholder: "Jaise: SuperMom, Amma, Queen, Mummy Ji",
+  });
+
+  if (nama && nama.length < 21) {
+    window.nama = nama;
+    vketikhalo = "Happy Mother's Day to my " + nama + "! 💐❤️";
+    mulainama();
+  } else {
+    await Swal.fire({
+      title: "Thoda chhota aur pyara naam likhiye 😊",
+      text: "20 characters se kam rakhiye.",
+      icon: "warning",
+    });
+    inipesan();
+  }
+}
+
+
+
+var tanya = "Shall we make this Mother's Day unforgettable for her? 💐";
+var opstanya = "Your choice for Maa is:";
+var tompositif = "Yes, she deserves all the love! ❤️";
+var tomnegatif = "Maybe later, but she’s always in my heart. 🌸";
+
+
+    async function pertanyaan() {
+      var { isConfirmed: prtanya } = await swals.fire({
+        title: nama + ", " + tanya,
+        text: "" + opstanya,
+        imageUrl: "" + fotostiker5.src,
+        showCancelButton: true,
+        confirmButtonText: "" + tompositif,
+        cancelButtonText: "" + tomnegatif,
+      });
+      if (prtanya) {
+  pesanwhatsapp = "Yes " + nama + ", let's make Mother's Day extra special! 💐";
+  menuju();
+      } else {
+        pesanwhatsapp = nama + ", don't miss the chance to make Maa smile today! ❤️";
+        await swalst.fire({
+          title: "" + kataditolak.innerHTML,
+          timer: 2000,
+          imageUrl: "" + stikerditolak.src,
+        });
+        menuju();
+      }
+    }
+  </script>
+  <script src="a.js"></script>
+</body>
+
+</html>
