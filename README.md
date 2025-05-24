@@ -23,6 +23,12 @@ Customize with her nickname, enjoy sweet visuals, music, and create an unforgett
 
 ---
 
+## 🌐 Live Demo
+
+🔗 <a href="https://motherdayv1.netlify.app/" target="_blank">**Visit Now** 🚀</a>
+
+---
+
 ## ✨ Features
 
 - 🎁 Click-to-unlock **virtual surprise gift**
